@@ -1,0 +1,33 @@
+HCP input -> G(V,E)
+
+HCP In -> f -> TSP in
+
+f: G - > G'(V,E') 
+for all (u,v) not in E, (u,v) = inf in E'
+
+
+Solve TSP problem.
+
+get solution K
+
+TSP out -> g -> HCP out
+g : K-> (0,1)
+if (K<inf) -> 1
+else 0
+
+HCP <= k TSP
+
+TSP at least as hard as HCP
+HCP = NP complete
+so TSP = NP Hard
+
+TSP is NP is trivial, 
+Given sequence of vertices promised Yes answer, Check if SUM of corresponding edges < K
+(done)
+
+
+
+if TSP of length K(K<inf), then there is HCP. Trivial, by definition
+No TSP of finite length, no HCP.
+
+
